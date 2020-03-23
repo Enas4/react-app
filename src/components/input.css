@@ -1,0 +1,30 @@
+.box{
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    border: 5px solid grey;
+    margin:auto;
+    margin-top:80px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: -50px;
+}
+.box h1{
+    font-size: 3em;
+    margin-left: 70px;
+}
+.box label{font-size: x-large;}
+.box input{
+    width:200px;
+    height:20px;
+    background-color: rgb(245, 217, 181);
+    margin-left: 20px;
+}
+.box button{
+    width: 80px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: rgb(218, 135, 152);
+    font-size: large;
+    border: 0px;
+}
