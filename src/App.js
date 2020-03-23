@@ -9,9 +9,10 @@ class App extends Component{
   render(){
     return(
       <div>
-       <Input />
-       <Main />
-       {/* <Form /> */}
+       
+      {/* <Input />
+       <Main /> */}
+       <Form />
       </div>
     )
   }
