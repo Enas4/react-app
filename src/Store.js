@@ -4,9 +4,8 @@ import Input from "/home/enas/redux-todo/src/Reducers/FormReducer.js";
 
 const rootReducer = combineReducers({
     main:mainReducer,
-    input:Input
-}
-    )
+     input:Input
+})
 
 export default rootReducer; 
 
