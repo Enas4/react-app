@@ -7,7 +7,7 @@ import Form from "/home/enas/redux-todo/src/components/Form.js";
 
 class App extends Component{
   render(){
-    return(
+    return( 
       <div>
        
       {/* <Input />
