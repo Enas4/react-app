@@ -1,12 +1,10 @@
 .box{
     width: 500px;
     height: 500px;
-    /* border-radius: 5px;
-    border: 5px solid rgb(61, 60, 60); */
-    margin:auto;
+    margin-left:400px; 
     margin-top:80px;
     padding-top: 50px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: -50px;
 }
 .box h1{
@@ -18,8 +16,8 @@
 .box input{
     width:200px;
     height:20px;
-    background-color: rgb(245, 217, 181);
-    margin-left: 20px;
+    background-color: rgb(233, 229, 225); 
+    margin-left: 10px;
 }
 .box button{
     width: 80px;

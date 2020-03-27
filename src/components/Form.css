@@ -23,3 +23,8 @@ margin-left: 550px;
     border-radius: 3px;
     margin-left: 50px;
 }
+.errMessage{
+    color:white;
+    text-align: center;
+    margin-top: 250px;
+}

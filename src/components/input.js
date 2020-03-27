@@ -9,7 +9,7 @@ class Input extends Component{
     }
     handleChange=(e)=>{
          this.setState({
-            id: Math.random().toString(36).substr(2, 9),
+            id: Math.floor(Math.random()*50+1),
              content:e.target.value
          })
     }
@@ -27,7 +27,7 @@ class Input extends Component{
                 <form onSubmit={this.handleSubmit} className="box">
                     <h1>User Todo App</h1>
                     <label>Add a new todo:</label>
-                    <input type="text" value={this.state.content} onChange={this.handleChange}/>
+                    <input autoFocus type="text" value={this.state.content} onChange={this.handleChange}/>
                     <button>Add</button>
                 </form>
             </div>
@@ -45,3 +45,5 @@ const mapDispatchToProps =(dispatch)=>{
 }
 }
 export default connect( mapStateToProps, mapDispatchToProps)(Input);
+
+

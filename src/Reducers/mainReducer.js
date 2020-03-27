@@ -27,19 +27,19 @@ const mainReducer = (state=inItState,action) => {
                 isLoggedIn:state.isLoggedIn
             }
             case 'UPDATE_TODO':
-               let con = Number(action.updateTodo.id);
-                 return {todos:state.todos.map(
-                 todo =>
-                 todo.id === con
-                     ? {
-                         ...todo,
-                         content: action.updateTodo.content
-                       }
-                     : todo
-               ),
-               isLoggedIn: state.isLoggedIn
-                      }
-                      default: return state;
+        let con = Number(action.updateTodo.id);
+        return {todos:state.todos.map(
+          todo =>
+          todo.id === con
+              ? {
+                  ...todo,
+                  content: action.updateTodo.content
+                }
+              : todo
+        ),
+        isLoggedIn: state.isLoggedIn
+              }
+        default: return state;
           }
         }
         export default mainReducer;

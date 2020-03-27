@@ -24,7 +24,7 @@ handleSubmit=(e)=>{
 render(){
     if(this.props.misMatch===true){
         return(
-            <div><h1>WRONG ID OR Password</h1></div>
+            <div className="errMessage"><h1>WRONG ID OR PASSWORD</h1></div>
         )
     }else{
     return(
