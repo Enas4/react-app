@@ -31,14 +31,16 @@ class Main extends Component {
       this.props.todos.map(item => {
         const myid = 'E'+item.id;
         return (
-            <ul>
+            // <ul>
+              // <li key={myid}>{item.content}
+              <div className="collection-item" key={item.id}>
               <div id={myid}>{item.content}</div>
-              <li key={myid}>{item.content}
                 <input onChange={this.handleChange} onBlur={this.clear} onFocus={this.changeValue} id={item.id} placeholder="enter updated value here"></input>
                 <button onClick={() => { this.props.update(this.state) }}>Edit</button>
                 <button onClick={() => { this.props.delete(item.id) }}>Delete</button>
-              </li>
-            </ul>
+            {/* //   </li>
+            // </ul> */}
+            </div>
         )}
       )
     ):(
