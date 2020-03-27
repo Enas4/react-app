@@ -1,0 +1,25 @@
+.formdiv{
+    margin-top: 200px;
+margin-left: 550px;
+}
+.formdiv label{
+    margin-left:50px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.formdiv input{
+    width:200px;
+    height: 30px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.formdiv button{
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-left: 50px;
+}

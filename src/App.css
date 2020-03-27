@@ -1,0 +1,11 @@
+    .logout_button button{
+        width:100px;
+        height: 50px;
+        border: 2px solid rgb(44, 41, 41);
+        background-color: rgb(171, 187, 241);
+        font-weight: bolder;
+        margin-left: 650px;
+        margin-top: 600px;
+        position: absolute;
+    }
+

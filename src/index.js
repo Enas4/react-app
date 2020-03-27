@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import {createStore} from "redux";
 import { Provider} from 'react-redux';
- import rootReducer from "/home/enas/redux-todo/src/Store.js";
+ import mainReducer from "/home/enas/redux-todo/src/Reducers/mainReducer.js";
 
 
-const store = createStore(rootReducer);
+const store = createStore(mainReducer);
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 

@@ -1,3 +1,8 @@
 body{
-  background-color: rgb(139, 190, 235);
+  /* background-color: rgb(166, 197, 226); */
+  background-image: url("https://photodune.img.customer.envatousercontent.com/files%2F254525816%2Fstage_bg_dust.jpg?w=500&fit=max&mark=https%3A%2F%2Fassets.shopfront.envato-static.com%2Fimages%2Fwatermarks-19012018.png&markalign=top%2Cleft&markpad=0&markfit=crop&fm=pjpg&q=50&s=2f4c9a08bb6b6c862599a99e47798d53");
+  height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+
 }

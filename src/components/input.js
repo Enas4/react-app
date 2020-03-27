@@ -11,7 +11,6 @@ class Input extends Component{
          this.setState({
             id: Math.random().toString(36).substr(2, 9),
              content:e.target.value
-            
          })
     }
     handleSubmit=(e)=>{
@@ -21,11 +20,12 @@ class Input extends Component{
             content:""
         })
     }
+      
     render(){
         return(
             <div>
                 <form onSubmit={this.handleSubmit} className="box">
-                    <h1>Redux todo App</h1>
+                    <h1>User Todo App</h1>
                     <label>Add a new todo:</label>
                     <input type="text" value={this.state.content} onChange={this.handleChange}/>
                     <button>Add</button>
@@ -41,7 +41,7 @@ const mapStateToProps = (state) => {
   }
 const mapDispatchToProps =(dispatch)=>{
     return{
-        add:(todo)=>{dispatch({type:"ADD_INPUT", addit:todo})}
+        add:(todo)=>{dispatch({type:"ADD_TODO", addit:todo})}
 }
 }
 export default connect( mapStateToProps, mapDispatchToProps)(Input);

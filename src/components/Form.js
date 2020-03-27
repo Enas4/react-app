@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
+import "./Form.css";
 
 class Form extends Component{
  state={
@@ -19,10 +20,16 @@ handleSubmit=(e)=>{
     console.log(this.props)
 }
 
+
 render(){
+    if(this.props.misMatch===true){
+        return(
+            <div><h1>WRONG ID OR Password</h1></div>
+        )
+    }else{
     return(
             <div className="formdiv">
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} >
                 <label className="userlabel">Username</label>
                 <br />
                 <input type="text" value={this.state.username} onChange={this.changeHandler} id="username" />
@@ -35,8 +42,9 @@ render(){
                 <br />
                 <button>Sumbit</button>
                 </form>
-            </div>
-        )
+                
+            </div>)
+    }
     }
 }
 
@@ -45,12 +53,13 @@ const mapStateToProps = (state) => {
     return {
        username:state.username,
        password:state.password,
-       logged:state.isLoggedIn
+       logged:state.isLoggedIn,
+       misMatch:state.misMatch
     }
   }
 const mapDispatchToProps =(dispatch)=>{
     return{
-      changeSubmit:(name)=>{dispatch({type:"SUBMIT_INPUT", payload:name})},
+      changeSubmit:(name)=>{dispatch({type:"LOGIN", payload:name})},
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Form);
